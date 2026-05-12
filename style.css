@@ -223,6 +223,31 @@ nav {
 
 .summary-box p {
   font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.image-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.image-card img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 700px) {
+  .image-card img {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 14px;
+  }
 }
 
 /* ── PROJECT CARDS ── */
