@@ -14,26 +14,15 @@
     <a class="nav-logo" href="index.html">Matt Cleary</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <!-- <li><a href="about.html">About</a></li> -->
       <li><a href="projects.html">Projects</a></li>
     </ul>
   </nav>
 
   <div class="hero">
-    <h1>Personal Homelab</h1>
-  </div>
-
-  <!-- need to write out summary before posting -->
-  <!-- <div class="section">
-    <p class="section-label">1.7.26</p>
-    <div class="img-wrap">
-      <img src="IMG_8065.jpeg" alt="Homelab rack and server setup" />
+    <div class="hero-inner">
+      <h1>Personal Homelab</h1>
     </div>
-    <p class="summary">
-      Revised my homelab through the winter break to use Proxmox VE hypervisor and TrueNAS Scale.
-      Along with that, a full-blown self-hosted environment for streaming owned shows.
-    </p>
-  </div> -->
+  </div>
 
   <hr class="divider" />
 
@@ -44,39 +33,24 @@
     </div>
     <div class="summary">
       <p>Shout out to:</p>
-    <ul>
-        <li><a href="https://www.youtube.com/@Ardens.">Ardens</a> for the inspiration on what to self-host.</li> 
-        <li><a href="https://www.youtube.com/@HardwareHaven">HardwareHaven</a> for the helpful guides and tutorials on how to find 
-        and salvage computers and hardware.</li>
-        <li><a href="https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w">Louis Rossmann</a> for his incredible FUTO guide.</li> 
-    </ul>
-      <p></p> 
-      <p>If it weren't for these creators, I wouldn't have been able to build my homelab...</p>
-      
-      <p>I took about a week doing research and finding out what I could do to upgrade my already growing homelab. I discovered these
-        Youtube channels and found inspiration through all of them. </p> 
-
-      <p>I first went out and bought myself more ethernet cables for my network switch. This was just so I can have more ports for my 
-        devices on my homelab's network. Additionally, I remembered that I had a Raspberry Pi 5 laying around and learned from Louis 
-        Rossmann's FUTO guide that I could set it up to run Pi-hole, a network-wide ad blocker.</p>
-
-        <p>The Lenovo Mini PC continued to be just a regular Windows 11 PC running a Minecraft Paper server. I want to get mods running
-          on the server, but need to learn how to get them to work on a small device like the Mini PC.
-        </p>
-
-      <p>I took inspiration from HardwareHaven and bought myself a HP Mini PC on ebay. Upgrading the ram inside of it to 8GB, I made the
-        PC a Ubuntu server and installed Docker Compose to run some Docker containers. Some containers I set up for starters were: </p>
-
-        <ul>
-          <li>Home Assistant</li>
-          <li>Portainer</li>
-          <li>Uptime Kuma</li>
-        </ul>
-
-        <p>Lastly, I found a stand for my Lenovo Mini PC to keep it upright. Everything fit perfectly on top of the TrueNAS server I had
-           set up. Things are going great!</p>
-
-      </div>
+      <ul>
+        <li><a href="https://www.youtube.com/@Ardens.">Ardens</a> for the inspiration on what to self-host.</li>
+        <li><a href="https://www.youtube.com/@HardwareHaven">HardwareHaven</a> for helpful guides on how to find and salvage computers and hardware.</li>
+        <li><a href="https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w">Louis Rossmann</a> for his incredible FUTO guide.</li>
+      </ul>
+      <p>If it weren't for these creators, I wouldn't have been able to build my homelab.</p>
+      <p>I took about a week doing research on what I could do to upgrade my already growing homelab. I discovered these YouTube channels and found inspiration through all of them.</p>
+      <p>I first went out and bought more ethernet cables for my network switch to add more ports for my devices. I also had a Raspberry Pi 5 laying around and learned from Louis Rossmann's FUTO guide that I could set it up to run Pi-hole, a network-wide ad blocker.</p>
+      <p>The Lenovo Mini PC continued running a Minecraft Paper server. I want to get mods running on it but need to learn how to get them working on a small device like the Mini PC.</p>
+      <p>Taking inspiration from HardwareHaven, I bought an HP Mini PC on eBay, upgraded the RAM to 8GB, made it a Ubuntu server, and installed Docker Compose. Some containers I set up to start:</p>
+      <ul>
+        <li>Home Assistant</li>
+        <li>Portainer</li>
+        <li>Uptime Kuma</li>
+      </ul>
+      <p>Lastly, I found a stand for my Lenovo Mini PC to keep it upright. Everything fit perfectly on top of the TrueNAS server. Things are going great!</p>
+    </div>
+  </div>
 
   <hr class="divider" />
 
@@ -85,37 +59,25 @@
     <div class="img-wrap">
       <img src="IMG_5415.jpeg" alt="Tinkering with computer hardware" />
     </div>
-    <div class="summary" style="margin-bottom: 2rem;">
-      <p>I taught myself how to image a new operating system onto a computer to repurpose it for my homelab. I discovered about the 
-        Network Attached Storage (NAS) and how it can be used to store and share files across a network. Now, I could take the 500GB
-        hard drive that was plugged into the Lenovo Mini PC and teach myself how to set it up through TrueNAS.</p>
-
-        <p>I successfully was able to hook the TrueNAS up to the salvaged laptop I had and could connect to the GUI from my network.
-          Here, I taught myself how to create a storage disk, datasets, pools, shares, and most importantly, data protection. Using 
-        TrueNAS made sharing the storage device a lot easier since it was through the GUI. Not only could I share the disk via SMB,
-      but I could also share it via NFS!</p>
-
-        <p>However, I ran into a problem. I couldn't close the laptop lid or else the computer would shut down or the text from the 
-          screen would burn into the display. So, I taught myself how to pop open the hood on the laptop and disconnect the screen power
-        from the motherboard.</p>
+    <div class="summary">
+      <p>I taught myself how to image a new operating system onto a computer to repurpose it for my homelab. I discovered Network Attached Storage (NAS) and how it can be used to store and share files across a network. I took the 500GB hard drive from the Lenovo Mini PC and taught myself how to set it up through TrueNAS.</p>
+      <p>I successfully hooked TrueNAS up to the salvaged laptop and connected to the GUI from my network. Here I learned how to create storage disks, datasets, pools, shares, and most importantly, data protection. TrueNAS made sharing storage much easier — not only via SMB but also via NFS.</p>
+      <p>However, I ran into a problem: I couldn't close the laptop lid or the computer would shut down, or the screen text would burn into the display. So I taught myself how to pop open the hood and disconnect the screen power from the motherboard.</p>
     </div>
 
     <div class="img-wrap">
       <img src="IMG_5423.jpeg" alt="Popping open the hood" />
     </div>
-    <div class="summary" style="margin-bottom: 2rem;">
-      <p>Popping open the hood helped me understand how the inside of a laptop was laid out. Not only did I learn that the laptop had a 
-        M.2 drive for extra storage, but I also learned that with laptops, the CPU is usually soldered into the motherboard!
-        Unhooking the connection to the display screen not only saved the screen from burning but also helped conserve energy.</p>
+    <div class="summary">
+      <p>Popping open the hood helped me understand how the inside of a laptop is laid out. I learned the laptop had an M.2 drive for extra storage, and that laptop CPUs are usually soldered to the motherboard. Disconnecting the display saved the screen from burn-in and also conserved energy.</p>
     </div>
 
     <div class="img-wrap">
       <img src="IMG_5425.jpeg" alt="Operating while hood is closed" />
     </div>
-    <p class="summary">
-      This allowed my first complete server to stay on while the screen was turned off. Now, if I needed to do anything with the server,
-      I could access it via my personal laptop either through SSH or through the TrueNAS GUI!
-    </p>
+    <div class="summary">
+      <p>This allowed my first complete server to stay on with the screen off. Now I could access it from my personal laptop via SSH or the TrueNAS GUI.</p>
+    </div>
   </div>
 
   <hr class="divider" />
@@ -127,27 +89,17 @@
     </div>
     <div class="summary">
       <p>The start of my homelab journey.</p>
-      <p>
-        I decided to start a homelab after I was gifted a Lenovo Mini PC. At first, I just wanted to run a Minecraft server
-        for my college friends, but this quickly introduced me to the world of self-hosting.
-      </p>
-      <p>
-        In the image: a wired keyboard and mouse, the Lenovo Mini PC, a small layer 2 network switch, a Raspberry Pi 5,
-        and a 500GB hard drive salvaged from another laptop. I taught myself how to upgrade the Lenovo from Windows 10
-        to Windows 11, bypassing the CPU requirements via command prompt. I also set up the hard drive as a shared
-        network drive using SMB and got Raspberry Pi OS running on the Pi.
-      </p>
-      <p>
-        I quickly got hooked on self-hosting and started exploring different services and hardware options at various price points.
-      </p>
+      <p>I decided to start a homelab after I was gifted a Lenovo Mini PC. At first I just wanted to run a Minecraft server for my college friends, but this quickly introduced me to the world of self-hosting.</p>
+      <p>In the image: a wired keyboard and mouse, the Lenovo Mini PC, a small layer 2 network switch, a Raspberry Pi 5, and a 500GB hard drive salvaged from another laptop. I taught myself how to upgrade the Lenovo from Windows 10 to Windows 11 by bypassing the CPU requirements via command prompt. I also set up the hard drive as a shared network drive using SMB and got Raspberry Pi OS running on the Pi.</p>
+      <p>I quickly got hooked on self-hosting and started exploring different services and hardware options at various price points.</p>
     </div>
   </div>
 
   <hr class="divider" />
 
   <div class="section">
-    <p class="section-label">Hardware | As of 1.7.26</p>
-    <div class="two-col" style="margin-bottom: 0;">
+    <p class="section-label">Hardware · As of 1.7.26</p>
+    <div class="two-col">
       <div class="two-col-card">
         <h3>Server Hardware</h3>
         <ul>
@@ -170,8 +122,8 @@
   <hr class="divider" />
 
   <div class="section">
-    <p class="section-label">Services &amp; Applications | As of 1.7.26</p>
-    <div class="two-col" style="margin-bottom: 2rem;">
+    <p class="section-label">Services &amp; Applications · As of 1.7.26</p>
+    <div class="two-col">
       <div class="two-col-card">
         <h3>Productivity</h3>
         <ul>
@@ -187,9 +139,9 @@
         </ul>
       </div>
     </div>
-    <p class="summary">
-      I also run a Minecraft server for friends and a Jellyfin server for my owned media.
-    </p>
+    <div class="summary">
+      <p>I also run a Minecraft server for friends and a Jellyfin server for my owned media.</p>
+    </div>
   </div>
 
   <footer>
