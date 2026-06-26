@@ -2,48 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matt Cleary</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="page-content">
-    <nav>
-      <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Matt Cleary</a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <!-- <li><a href="posts.html">Posts</a></li> -->
-      </ul>
-    </div>
+  <nav>
+    <a class="nav-logo" href="index.html">Matt Cleary</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <!-- <li><a href="about.html">About</a></li> -->
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
   </nav>
 
-  <div class="container">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Matt Cleary</h1>
-        <p class="role">Cybersecurity Student at The Pennsylvania State University '27</p>
-        <div class="social-links">
-          <a href="https://github.com/Jackpot115" target="_blank" rel="noopener noreferrer" class="social-btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/mattclearyusa/" target="_blank" rel="noopener noreferrer" class="social-btn">LinkedIn</a>
-        <a href="email.html" class="social-btn">Email</a>
-        <a href="homelab.html" class="social-btn">Homelab Project</a>
-        </div>
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">Cybersecurity Student · Penn State '27</p>
+      <h1>Matt Cleary</h1>
+      <p class="hero-sub">Studying cybersecurity at The Pennsylvania State University. Interested in homelabbing, security operations, and blue team activities.</p>
+      <div class="hero-links">
+        <a href="https://github.com/Jackpot115" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub</a>
+        <a href="https://www.linkedin.com/in/mattclearyusa/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn</a>
+        <a href="email.html" class="btn btn-ghost">Email</a>
       </div>
-    </section>
-
-
+    </div>
   </div>
-  </main>
 
-  <footer class="footer">
-    <p>&copy; 2026</p>
+  <hr class="divider" />
+
+  <div class="section">
+    <p class="section-label">Experience</p>
+    <div class="positions">
+
+      <div class="position-card">
+        <div class="position-card-top">
+          <span class="position-title">Security Engineer, Intern</span>
+          <span class="position-date">June 2026 – Present</span>
+        </div>
+        <a class="position-org" href="https://uhs.com/about-universal-health-services/">Universal Health Services, Inc. (UHS)</a>
+        <p class="position-desc">Brief description of your role and responsibilities here.</p>
+      </div>
+
+      <div class="position-card">
+        <div class="position-card-top">
+          <span class="position-title">Remote Technician, Intern</span>
+          <span class="position-date">May 2025 – April 2026</span>
+        </div>
+        <a class="position-org" href="https://emcotechnology.com/">EMCO Technology, Inc.</a>
+        <p class="position-desc">Brief description of your role and responsibilities here.</p>
+      </div>
+
+      <div class="position-card">
+        <div class="position-card-top">
+          <span class="position-title">Learning Assistant, Lead LA</span>
+          <span class="position-date">January 2024 – Present</span>
+        </div>
+        <a class="position-org" href="https://ist.psu.edu/">Penn State College of IST</a>
+        <p class="position-desc">Brief description of your role and responsibilities here.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Matt Cleary
   </footer>
+
 </body>
 </html>

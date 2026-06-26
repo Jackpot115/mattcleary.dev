@@ -2,204 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homelab — Matt Cleary</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="page-content">
-    <nav>
-      <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Matt Cleary</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <!-- <li><a href="posts.html">Posts</a></li> -->
-      </ul>
-    </div>
+  <nav>
+    <a class="nav-logo" href="index.html">Matt Cleary</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <!-- <li><a href="about.html">About</a></li> -->
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
   </nav>
 
-  <div class="container">
-
-    <div class="page-header">
-      <h1>Personal Homelab</h1>
-    </div>
-
-    <section>
-      <div class="section-label">1.7.26</div>
-      <div class="image-card">
-        <img src="IMG_8065.jpeg" alt="Homelab rack and server setup" />
-      </div>
-
-      <div class="summary-box">
-        <p>
-          Revised my homelab through the winter break to use Proxmox VE hypervisor and TrueNAS scale. Along with that, a full-blown self-hosted environment for streaming owned shows.
-        </p>
-      </div>
-
-    </section>
-
-
-    <section>
-      <div class="section-label">8.16.25</div>
-
-      <div class="image-card">
-        <img src="IMG_5482.jpeg" alt="Homelab router and switch installation"/>
-      </div>
-
-      <div class="summary-box">
-        <p>
-          Updated my homelab throughout the week. Now I have a Minecraft server and a Ubuntu server that runs a couple Docker containers.
-        </p>
-      </div>
-
-    </section>
-
-    <section>
-      <div class="section-label">8.7.25</div>
-
-      <div class="image-card">
-        <img src="IMG_5415.jpeg" alt="Tinkering with computer hardware"/>
-      </div>
-
-
-      <div class="summary-box">
-        <p>
-          Tinkering with computer hardware and learning about different components and how they work together.
-        </p>
-        <p>
-          
-        </p>
-        </div>
-
-        <div class="image-card">
-        <img src="IMG_5423.jpeg" alt="Popping open the hood"/>
-      </div>
-
-      <div class="summary-box">
-        <p>
-          Popping open the hood and learning about the different components and how they work together. Unhooking connection to built-in screen to conserve on battery.
-        </p>
-        <p>
-          
-        </p>
-        </div>
-
-
-         <div class="image-card">
-        <img src="IMG_5425.jpeg" alt="Operating while hood is closed"/>
-      </div>
-
-      <div class="summary-box">
-        <p>
-          This allowed the computer to stay on while the screen was turned off. Saving energy consumption.
-        </p>
-        <p>
-          
-        </p>
-        </div>
-
-    </section>
-
-    <section>
-      <div class="section-label">8.6.25</div>
-
-      <div class="image-card">
-        <img src="IMG_5393.jpeg" alt="Early homelab setup"/>
-      </div>
-
-<div class="summary-box">
-        <p>
-          The start of my homelab journey...
-        </p>
-        <p>
-          I decided to start a homelab after I was gifted a lenovo mini pc. At first, I just wanted to run a Minecraft server for my college
-          friends, but this quickly introduced me to the world of self-hosting. 
-        </p>
-        <p>
-          In the image, I had a wired keyboard and mouse, the lenovo mini pc I received, a small layer 2 network switch, a raspberry pi 5, 
-          and a 500GB hard drive I salvaged from another laptop. I taught myself how to upgrade the lenovo mini pc from 
-          Windows 10 to Windows 11 and bypassed the CPU requirements by using the command prompt. I also taught myself how to make the 
-          hard drive into a shared network drive using SMB. I also had an instance of Rasberry Pi OS running on the raspberry pi 5 and 
-          didn't know what else I could do with it at that point.
-        </p>
-        <p>
-          This was a fun project to get started with, and I quickly got hooked on the idea of self-hosting and running my own services. 
-          I started looking into different applications and services I could run on my homelab, and I quickly realized that there was a lot of 
-          potential for learning and experimentation. I also started looking into different hardware options for my homelab, and I quickly realized 
-          that there were a lot of different options available at different price points.
-        </p>
-        <p>
-          Overall, this was a great project to get started with, and I'm excited to see where it goes in the future. I have a lot of ideas for different 
-          services and applications I want to run on my homelab, and I'm excited to learn more about self-hosting and running my own services.
-        </p>
-      </div>
-
-    </section>
-
-
-    <section>
-      <div class="section-label">Hardware In My Setup</div>
-      <div class="about-grid">
-        <div class="about-card">
-          <h3>Server Hardware</h3>
-          <ul>
-            <li>32GB RAM for running multiple VMs</li>
-            <li>1TB NVMe SSD for fast storage</li>
-            <li>Multiple HDDs for data storage</li>
-          </ul>
-        </div>
-
-        <div class="about-card">
-          <h3>Virtualization</h3>
-          <ul>
-            <li>Proxmox VE hypervisor</li>
-            <li>Multiple virtual machines</li>
-            <li>Network isolation and VLANs</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-label">Services & Applications</div>
-      <div class="about-grid">
-        <div class="about-card">
-          <h3>Productivity</h3>
-          <ul>
-            <li>Nextcloud for file syncing and collaboration</li>
-          </ul>
-        </div>
-
-        <div class="about-card">
-          <h3>Networking & Security</h3>
-          <ul>
-            <li>Pi-hole for network-wide ad blocking</li>
-            <li>pfSense firewall and routing</li>
-            <li>VPN server for secure remote access</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-label">Gaming & Entertainment</div>
-      <div class="summary-box">
-        <p>
-          I also run entertainment services like a Minecraft server for my friends and a Jellyfin server for my owned media.
-        </p>
-      </div>
-    </section>
-
+  <div class="hero">
+    <h1>Personal Homelab</h1>
   </div>
 
-  </main>
+  <div class="section">
+    <p class="section-label">1.7.26</p>
+    <div class="img-wrap">
+      <img src="IMG_8065.jpeg" alt="Homelab rack and server setup" />
+    </div>
+    <p class="summary">
+      Revised my homelab through the winter break to use Proxmox VE hypervisor and TrueNAS Scale.
+      Along with that, a full-blown self-hosted environment for streaming owned shows.
+    </p>
+  </div>
 
-  <footer class="footer">
-    <p>&copy; 2026</p>
+  <hr class="divider" />
+
+  <div class="section">
+    <p class="section-label">8.16.25</p>
+    <div class="img-wrap">
+      <img src="IMG_5482.jpeg" alt="Homelab router and switch installation" />
+    </div>
+    <p class="summary">
+      Updated my homelab throughout the week. Now running a Minecraft server and a Ubuntu server with a couple Docker containers.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <p class="section-label">8.7.25</p>
+    <div class="img-wrap">
+      <img src="IMG_5415.jpeg" alt="Tinkering with computer hardware" />
+    </div>
+    <div class="summary" style="margin-bottom: 2rem;">
+      <p>Tinkering with computer hardware and learning about different components and how they work together.</p>
+    </div>
+
+    <div class="img-wrap">
+      <img src="IMG_5423.jpeg" alt="Popping open the hood" />
+    </div>
+    <div class="summary" style="margin-bottom: 2rem;">
+      <p>Popping open the hood and learning about the different components. Unhooking the connection to the built-in screen to conserve battery.</p>
+    </div>
+
+    <div class="img-wrap">
+      <img src="IMG_5425.jpeg" alt="Operating while hood is closed" />
+    </div>
+    <p class="summary">
+      This allowed the computer to stay on while the screen was turned off, saving energy consumption.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <p class="section-label">8.6.25</p>
+    <div class="img-wrap">
+      <img src="IMG_5393.jpeg" alt="Early homelab setup" />
+    </div>
+    <div class="summary">
+      <p>The start of my homelab journey.</p>
+      <p>
+        I decided to start a homelab after I was gifted a Lenovo mini PC. At first, I just wanted to run a Minecraft server
+        for my college friends, but this quickly introduced me to the world of self-hosting.
+      </p>
+      <p>
+        In the image: a wired keyboard and mouse, the Lenovo mini PC, a small layer 2 network switch, a Raspberry Pi 5,
+        and a 500GB hard drive salvaged from another laptop. I taught myself how to upgrade the Lenovo from Windows 10
+        to Windows 11, bypassing the CPU requirements via command prompt. I also set up the hard drive as a shared
+        network drive using SMB and got Raspberry Pi OS running on the Pi.
+      </p>
+      <p>
+        I quickly got hooked on self-hosting and started exploring different services and hardware options at various price points.
+      </p>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <p class="section-label">Hardware</p>
+    <div class="two-col" style="margin-bottom: 0;">
+      <div class="two-col-card">
+        <h3>Server Hardware</h3>
+        <ul>
+          <li>32GB RAM for running multiple VMs</li>
+          <li>1TB NVMe SSD for fast storage</li>
+          <li>Multiple HDDs for data storage</li>
+        </ul>
+      </div>
+      <div class="two-col-card">
+        <h3>Virtualization</h3>
+        <ul>
+          <li>Proxmox VE hypervisor</li>
+          <li>Multiple virtual machines</li>
+          <li>Network isolation and VLANs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <p class="section-label">Services &amp; Applications</p>
+    <div class="two-col" style="margin-bottom: 2rem;">
+      <div class="two-col-card">
+        <h3>Productivity</h3>
+        <ul>
+          <li>Nextcloud for file syncing</li>
+        </ul>
+      </div>
+      <div class="two-col-card">
+        <h3>Networking &amp; Security</h3>
+        <ul>
+          <li>Pi-hole for network-wide ad blocking</li>
+          <li>pfSense firewall and routing</li>
+          <li>VPN server for secure remote access</li>
+        </ul>
+      </div>
+    </div>
+    <p class="summary">
+      I also run a Minecraft server for friends and a Jellyfin server for my owned media.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2026 Matt Cleary
   </footer>
+
 </body>
 </html>

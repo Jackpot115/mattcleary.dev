@@ -2,49 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Matt Cleary</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="page-content">
-    <nav>
-      <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Matt Cleary</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <!-- <li><a href="posts.html">Posts</a></li> -->
-      </ul>
-    </div>
+  <nav>
+    <a class="nav-logo" href="index.html">Matt Cleary</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <!-- <li><a href="about.html">About</a></li> -->
+      <li><a href="projects.html" class="active">Projects</a></li>
+    </ul>
   </nav>
 
-  <div class="container">
+  <div class="hero">
+    <h1>Projects</h1>
+  </div>
 
-    <div class="page-header">
-      <h1>Projects</h1>
-    </div>
+  <div class="section">
+    <div class="positions">
 
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <h3>Personal Homelab</h3>
-        <p>
-          I built a personal homelab to experiment with self-hosting applications and learning server management. 
+      <div class="position-card">
+        <div class="position-card-top">
+          <span class="position-title">Personal Homelab</span>
+        </div>
+        <p class="position-desc">
+          I built a personal homelab to experiment with self-hosting applications and server management.
           It includes a Proxmox hypervisor running multiple VMs for different services like Nextcloud, Pi-hole, and a Minecraft server.
         </p>
-        <a href="homelab.html" class="social-btn">Go to project</a>
+        <div style="margin-top: 1rem;">
+          <a href="homelab.html" class="btn btn-ghost" style="background: var(--surface); color: #ffffff; border-color: var(--surface); font-size: 0.82rem; padding: 0.5rem 1.1rem;">View project →</a>
+        </div>
       </div>
 
     </div>
   </div>
-  </main>
 
-  <footer class="footer">
-    <p>&copy; 2026</p>
+  <footer>
+    &copy; 2026 Matt Cleary
   </footer>
 
 </body>
