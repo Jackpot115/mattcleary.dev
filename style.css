@@ -144,7 +144,7 @@ nav {
 .positions {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 .position-card {
   background: #ffffff;
@@ -208,6 +208,13 @@ nav {
 
 /* ── IMAGES ── */
 .img-wrap { margin: 1.5rem 0; }
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.image-row .img-wrap { margin: 0; }
 .img-wrap img {
   width: 100%;
   height: auto;

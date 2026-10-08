@@ -28,7 +28,83 @@
 
   <!-- summer post: adding additional drives to optiplex for raid backups, application backups WITH LOGGING (truenas, immich, jellyfin), additional optiplex's to set up, media stack?  -->
 
-  <!-- Make a post about spring break. I added Imich as a backup for my photos and learned how to map storage drives from the optiplex to an application running in a vm-->
+  <hr class="divider" />
+
+  <div class="section">
+    <p class="section-label">8.20.26</p>
+
+    <div class="summary">
+      <p>A lot happened to my homelab since my last post. I made some upgrades to my hardware, deployed some new applications, and made significant improvements
+        to my network.
+      </p>        
+      </div>
+
+    <div class="img-wrap">
+    <img src="IMG_1479.jpg" alt="TrueNAS OptiPlex Upgrade" />
+    </div>
+    <div class="image-row">
+      <div class="img-wrap">
+        <img src="IMG_2115.jpg" alt="TrueNAS OptiPlex Upgrade" />
+      </div>
+      <div class="img-wrap">
+        <img src="IMG_2116.jpg" alt="TrueNAS OptiPlex Upgrade" />
+      </div>
+      <div class="img-wrap">
+        <img src="IMG_2106.jpg" alt="TrueNAS OptiPlex Upgrade" />
+        </div>
+    </div>
+    <div class="summary">
+         <p>For starters, I added additional hard drives to my TrueNAS OptiPlex for more storage. This is important because it allowed me to replicate my important photos
+      to one of the backup drives in case my main photo drive failed. The other drive I added was used to store my media for my Jellyfin server.
+      </p>
+      <p>I have so many hard drives and SSDs because when I used to play on gaming consoles, I bought myself external storage drives. Now that I mainly play
+        on PC, I don't use them anymore. So, I wiped the information off of the drives and took them out of their plastic cases so I could put them directly 
+      into the server. This will allow data to transfer more efficiently than through a USB connection. I checked the spin cycles on the drives to ensure that 
+    they could be used for a long time. This is important because SSDs are very expensive today...</p>
+      </div>
+
+    <div class="img-wrap">
+    <img src="IMG_1834.jpg" alt="Ram Upgrade" />
+    </div>
+    <div class="image-row">  
+    <div class="img-wrap">
+      <img src="IMG_1835.jpg" alt="Ram Upgrade" />
+      </div>
+      <div class="img-wrap">
+        <img src="IMG_1836.jpg" alt="Ram Upgrade" />
+      </div>
+    </div>
+    <div class="summary">
+      <p>Secondly, I upgraded the RAM inside my Proxmox server and my HP Mini PC. I received the RAM from a friend and thought it would be great for my homelab!</p>
+      <p>For my Proxmox server, I now have 32GB DDR4 RAM and I have 16GB DDR4 RAM in my HP Mini PC.</p>
+    </div>
+
+    <div class="img-wrap">
+      <img src="IMG_1920.jpg" alt="Proxmox Backup Server" />
+      </div>
+      <div class="summary">
+        <p>Thirdly, I set up a Proxmox Backup Server (PBS) to back up my Proxmox server. This is important because it allows me to back up my virtual
+           machines and containers in case something goes wrong with my Proxmox server. I set up the PBS on my HP Mini PC and connected it to my Proxmox 
+           server. Now, I can back up my virtual machines and containers to the PBS and restore them if needed. </p>
+
+    <div class="img-wrap">
+      <img src="mediastack.jpg" alt="Media Stack" />
+    </div>
+    
+
+    <div class="summary">
+      <p>Lastly, I deployed a few new applications to my homelab. I deployed Immich, a self-hosted photo management application, Jellyfin, a self-hosted 
+        media server, and a few other applications. I learned that I could run multiple applications inside a docker-compose file. This made deploying
+      and managing them much easier.</p>
+      <p>Immich is a great application because it allows me to manage my photos in one place. It also allows me to back up my photos from my phone and 
+        computer to my homelab. Then, I could access all my photos from anywhere and free up space on my phone!</p>
+      <p>Jellyfin is a great application because it allows me to stream my owned media from my homelab to any device in my home. 
+        It also allows me to organize my media library and create playlists.</p>
+      <p>Overall, I am very happy with the progress I've made. Just recently, I've secured a deal with a friend that would allow me to upgrade the storage
+        of my TrueNAS server even more! I also plan on setting up Nginx Proxy Manager to manage my applications easier and to finally make HomeAssistant useful. 
+      </p>
+      </div>
+  </div>
 
 
   <hr class="divider" />
@@ -36,7 +112,7 @@
   <div class="section">
     <p class="section-label">1.7.26</p>
     <div class="img-wrap">
-      <img src="IMG_8065.jpeg" alt="OptiPlex additional hardware" />
+      <img src="optimized/IMG_8065.jpeg" alt="OptiPlex additional hardware" />
       </div>
     <div class="summary">
       <p>Coming home for winter break allowed me to work on my homelab more. Not only did I have more free time to tinkers and mess around with it, but I also couldn't 
@@ -48,7 +124,7 @@
 
 
     <div class="img-wrap">
-      <img src="IMG_7983.jpeg" alt="Proxmox server setup" />
+      <img src="optimized/IMG_7983.jpeg" alt="Proxmox server setup" />
       </div>
     <div class="summary">
         <p>After setting up the VPN, I wanted to start a Proxmox server for myself. This is because for the holidays, I received parts for me to build myself a PC and no longer had
@@ -60,7 +136,7 @@
       </div>
 
     <div class="img-wrap">
-      <img src="IMG_7992.jpeg" alt="OptiPlex additional hardware" />
+      <img src="optimized/IMG_7992.jpeg" alt="OptiPlex additional hardware" />
       </div>
     <div class="summary">
       <p>Additionally, I went to a hardware surplus store and scored myself a Dell OptiPlex for a good price. I only had to supply my own SSD and it was up and running!</p>
@@ -81,7 +157,7 @@
   <div class="section">
     <p class="section-label">8.16.25</p>
     <div class="img-wrap">
-      <img src="IMG_5482.jpeg" alt="Homelab router and switch installation" />
+      <img src="optimized/IMG_5482.jpeg" alt="Homelab router and switch installation" />
     </div>
     <div class="summary">
       <p>Shout out to:</p>
@@ -109,7 +185,7 @@
   <div class="section">
     <p class="section-label">8.7.25</p>
     <div class="img-wrap">
-      <img src="IMG_5415.jpeg" alt="Tinkering with computer hardware" />
+      <img src="optimized/IMG_5415.jpeg" alt="Tinkering with computer hardware" />
     </div>
     <div class="summary">
       <p>I taught myself how to image a new operating system onto a computer to repurpose it for my homelab. I discovered Network Attached Storage (NAS) and how it can be used to store and share files across a network. I took the 500GB hard drive from the Lenovo Mini PC and taught myself how to set it up through TrueNAS.</p>
@@ -118,14 +194,14 @@
     </div>
 
     <div class="img-wrap">
-      <img src="IMG_5423.jpeg" alt="Popping open the hood" />
+      <img src="optimized/IMG_5423.jpeg" alt="Popping open the hood" />
     </div>
     <div class="summary">
       <p>Popping open the hood helped me understand how the inside of a laptop is laid out. I learned the laptop had an M.2 drive for extra storage, and that laptop CPUs are usually soldered to the motherboard. Disconnecting the display saved the screen from burn-in and also conserved energy.</p>
     </div>
 
     <div class="img-wrap">
-      <img src="IMG_5425.jpeg" alt="Operating while hood is closed" />
+      <img src="optimized/IMG_5425.jpeg" alt="Operating while hood is closed" />
     </div>
     <div class="summary">
       <p>This allowed my first complete server to stay on with the screen off. Now I could access it from my personal laptop via SSH or the TrueNAS GUI.</p>
@@ -137,7 +213,7 @@
   <div class="section">
     <p class="section-label">8.6.25</p>
     <div class="img-wrap">
-      <img src="IMG_5393.jpeg" alt="Early homelab setup" />
+      <img src="optimized/IMG_5393.jpeg" alt="Early homelab setup" />
     </div>
     <div class="summary">
       <p>The start of my homelab journey.</p>
