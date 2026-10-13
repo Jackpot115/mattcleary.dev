@@ -77,6 +77,8 @@
         const theme = activeTheme();
         toggle.setAttribute("aria-checked", String(theme === "dark"));
         toggle.setAttribute("aria-label", `Device theme, currently ${theme} mode`);
+        toggle.querySelector(".theme-toggle-label").textContent =
+          theme === "dark" ? "Dark" : "Light";
       }
     }
   });
