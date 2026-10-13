@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="theme.js"></script>
 </head>
 <body>
 
@@ -14,7 +15,6 @@
     <a class="nav-logo" href="index.html">Matt Cleary</a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
-      <!-- <li><a href="about.html">About</a></li> -->
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="projects.html">Projects</a></li>
     </ul>
@@ -84,6 +84,39 @@
       </div>
     </div>
   </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <p class="section-label">Music Taste</p>
+    <p class="music-intro">Replace a YouTube link in a bubble to show that video's thumbnail artwork.</p>
+    <div class="music-bubbles">
+      <a class="music-bubble" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+        <img class="music-artwork" alt="YouTube video artwork" />
+        <span>Example track one</span>
+      </a>
+      <a class="music-bubble" href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blank" rel="noopener noreferrer">
+        <img class="music-artwork" alt="YouTube video artwork" />
+        <span>Example track two</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll(".music-bubble").forEach((bubble) => {
+      const videoUrl = new URL(bubble.href);
+      const videoId = videoUrl.hostname === "youtu.be"
+        ? videoUrl.pathname.slice(1)
+        : videoUrl.searchParams.get("v") || videoUrl.pathname.match(/\/(?:shorts|embed)\/([^/]+)/)?.[1];
+      const artwork = bubble.querySelector(".music-artwork");
+
+      if (videoId && /^[\w-]{11}$/.test(videoId)) {
+        artwork.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+      } else {
+        artwork.alt = "No YouTube thumbnail available";
+      }
+    });
+  </script>
 
   <footer>
     &copy; 2026 Matt Cleary
